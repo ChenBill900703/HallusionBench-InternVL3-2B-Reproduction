@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "Please cite both the original HallusionBench paper and this single-model reproduction. Published model scores were not rerun."
+title: "HallusionBench InternVL3-2B Reproduction on a Single 8GB GPU"
+type: software
+authors:
+  - name: "ChenBill900703"
+repository-code: "https://github.com/ChenBill900703/HallusionBench-InternVL3-2B-Reproduction"
+version: "stage3-v1"
+date-released: 2026-10-21
+url: "https://github.com/ChenBill900703/HallusionBench-InternVL3-2B-Reproduction"
+preferred-citation:
+  type: conference-paper
+  title: "HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models"
+  authors:
+    - family-names: Guan
+      given-names: Tianrui
+    - family-names: Liu
+      given-names: Fuxiao
+    - family-names: Wu
+      given-names: Xiyang
+    - family-names: Xian
+      given-names: Ruiqi
+    - family-names: Li
+      given-names: Zongxia
+    - family-names: Liu
+      given-names: Xiaoyu
+    - family-names: Wang
+      given-names: Xijun
+    - family-names: Chen
+      given-names: Lichang
+    - family-names: Huang
+      given-names: Furong
+    - family-names: Yacoob
+      given-names: Yaser
+    - family-names: Manocha
+      given-names: Dinesh
+    - family-names: Zhou
+      given-names: Tianyi
+  year: 2024
+  conference:
+    name: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+  start: 14375
+  end: 14385
+  url: "https://openaccess.thecvf.com/content/CVPR2024/html/Guan_HallusionBench_An_Advanced_Diagnostic_Suite_for_Entangled_Language_Hallucination_and_CVPR_2024_paper.html"
