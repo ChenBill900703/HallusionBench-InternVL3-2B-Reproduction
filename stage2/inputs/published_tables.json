@@ -1,0 +1,14 @@
+{
+  "source": "Guan et al., CVPR 2024 paper, PDF page 7 / printed page 14381, Tables 2 and 3; visually checked",
+  "units": "Table2 and consistency/diagnosis in percent; PctDiff in [-1,1], FP ratio in [0,1]",
+  "counts": "Not published as exact judge-run numerators; not inferred from rounded percentages",
+  "rows": [
+    {"model":"GPT-4V (Oct 2023)","parameters":"undisclosed","evaluation":"Human","result_type":"Published Result","qAcc":31.42,"fAcc":44.22,"Easy":79.56,"Hard":38.37,"All":67.58,"PctDiff":0.066,"FP":0.60,"Correct":44.22,"Inconsistent":32.66,"Wrong":23.12,"LH":21.86,"VI":46.17,"Mixed":31.97},
+    {"model":"GPT-4V (Oct 2023)","parameters":"undisclosed","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":28.79,"fAcc":39.88,"Easy":75.60,"Hard":37.67,"All":65.28,"PctDiff":0.058,"FP":0.58,"Correct":39.88,"Inconsistent":38.15,"Wrong":21.97,"LH":22.19,"VI":45.66,"Mixed":32.14},
+    {"model":"LLaVA-1.5","parameters":"13B","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":10.55,"fAcc":24.86,"Easy":49.67,"Hard":29.77,"All":46.94,"PctDiff":0.26,"FP":0.75,"Correct":24.86,"Inconsistent":45.38,"Wrong":29.77,"LH":26.71,"VI":51.09,"Mixed":22.20},
+    {"model":"Qwen-VL","parameters":"9.6B","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":5.93,"fAcc":6.65,"Easy":31.43,"Hard":24.88,"All":39.15,"PctDiff":0.12,"FP":0.60,"Correct":6.65,"Inconsistent":50.29,"Wrong":43.06,"LH":0.87,"VI":88.06,"Mixed":11.06},
+    {"model":"BLIP2","parameters":"8.2B","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":5.05,"fAcc":12.43,"Easy":33.85,"Hard":40.70,"All":40.48,"PctDiff":0.18,"FP":0.65,"Correct":12.43,"Inconsistent":63.01,"Wrong":24.57,"LH":39.14,"VI":43.45,"Mixed":17.41},
+    {"model":"Claude 3","parameters":"undisclosed","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":21.76,"fAcc":28.61,"Easy":55.16,"Hard":41.40,"All":56.86,"PctDiff":0.063,"FP":0.57,"Correct":28.61,"Inconsistent":49.42,"Wrong":21.97,"LH":19.10,"VI":59.14,"Mixed":21.77},
+    {"model":"BLIP2-T5","parameters":"12.1B","evaluation":"GPT4-Assisted","result_type":"Published Result","qAcc":15.16,"fAcc":20.52,"Easy":45.49,"Hard":43.49,"All":48.09,"PctDiff":0.08,"FP":0.58,"Correct":20.52,"Inconsistent":59.54,"Wrong":19.94,"LH":41.64,"VI":40.44,"Mixed":17.92}
+  ]
+}
