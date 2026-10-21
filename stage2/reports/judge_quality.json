@@ -1,0 +1,62 @@
+{
+  "all_selected": {
+    "n": 397,
+    "joint_agree": 374,
+    "joint_disagree": 23,
+    "semantic_agree": 387,
+    "semantic_disagree": 10,
+    "stance_agree": 376,
+    "stance_disagree": 21,
+    "joint_agreement_rate": 0.9420654911838791,
+    "semantic_agreement_rate": 0.9748110831234257
+  },
+  "preregistered_random": {
+    "n": 113,
+    "joint_agree": 110,
+    "joint_disagree": 3,
+    "semantic_agree": 113,
+    "semantic_disagree": 0,
+    "stance_agree": 110,
+    "stance_disagree": 3,
+    "joint_agreement_rate": 0.9734513274336283,
+    "semantic_agreement_rate": 1.0
+  },
+  "all_token_caps_reviewed": true,
+  "all_initial_uncertain_ambiguous_reviewed": true,
+  "adjudication_records": 25,
+  "additional_after_review_corrections": 2,
+  "unresolved_reference_disputes": 32,
+  "final_semantic_counts": {
+    "2": 163,
+    "0": 412,
+    "1": 554
+  },
+  "final_stance_counts": {
+    "uncertain": 104,
+    "yes": 507,
+    "no": 433,
+    "ambiguous": 85
+  },
+  "same_model_re_read": true,
+  "independent_human_validation": false,
+  "full_triple_judgment": false,
+  "full_consistency_audit_v2": {
+    "completed_batches": 47,
+    "full_text_items_reviewed": 1129,
+    "full_response_relations_reviewed": 674,
+    "item_label_changes": 13,
+    "semantic_label_changes": 13,
+    "stance_changes": 3,
+    "final_correctness_changes": 7,
+    "relation_changes": 2,
+    "explanation_issue_flags": 87,
+    "reference_accepted_with_explanation_issue": 20,
+    "reference_disputes": 32,
+    "prior_labels_visible": true,
+    "same_conversation_model": true,
+    "independent_human_validation": false,
+    "rubric_sha256": "c3c84215550071ef7d172dd4bebf6387ff976b4cb0a52039e6689ed9da947e8f",
+    "annotation_rule": "0/1/2 measure reference agreement; reference conflicts flagged separately; raw GT unchanged",
+    "reliability_claim": "Full coverage consistency audit, not a measured grading accuracy or an independent validation."
+  }
+}

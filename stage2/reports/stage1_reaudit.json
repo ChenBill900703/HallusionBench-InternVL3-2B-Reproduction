@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "f415c03bc7a7e86c84a28f3e8c8b234fb40efd0b32924099aca9854a19d4c637",
+  "zip_members_verified": 127,
+  "sample_count": 1129,
+  "unique_ids": 1129,
+  "question_control_groups": 455,
+  "figure_groups": 346,
+  "judge_batches": 47,
+  "at_token_limit": 40,
+  "models": [
+    "OpenGVLab/InternVL3-2B"
+  ],
+  "condition_counts": {
+    "no_visual": 178,
+    "original": 447,
+    "edited": 504
+  },
+  "local_images_hash_verified": 346,
+  "smoke_rows_included": 0,
+  "other_model_rows_included": 0,
+  "all_batch_raw_responses_match": true,
+  "all_batch_gt_match": true,
+  "package_summary_matches": true,
+  "stage1_integrity_matches": true,
+  "passed": true
+}

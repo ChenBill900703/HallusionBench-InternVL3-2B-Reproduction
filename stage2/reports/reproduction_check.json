@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "version": "hb-stage2-v2",
+  "archive": "HallusionBench_Stage2_Results.zip",
+  "fresh_extraction": "tmp/stage2-v2-reproduction-acc30ddf4e",
+  "manifest_payload_files_rehashed": 415,
+  "reproduction_steps": 7,
+  "all_steps_passed": true,
+  "identical_recomputed_files": 28,
+  "verified_files": [
+    {
+      "path": "stage2/results/judgments.jsonl",
+      "sha256": "18f8a828c9436dcf95258c5a34aca60a6deb215b6a5844572a60c739d62b8efa"
+    },
+    {
+      "path": "stage2/results/pair_relations.jsonl",
+      "sha256": "c002a0ce1ce2a2539b4d428072cb800abfc8d35dba9a37748f784e52f0f296b2"
+    },
+    {
+      "path": "stage2/results/official_scored_rows.jsonl",
+      "sha256": "8ad1ae4698e53c6261ce5c62cdc6aaaaca0a9db47d82d93d70e3c5dab96d702e"
+    },
+    {
+      "path": "stage2/results/diagnostic_trace.jsonl",
+      "sha256": "1a99ad0daf50164a6096596de7e3f36ece5b2be8eba59c523f0cfe854abca0b4"
+    },
+    {
+      "path": "stage2/results/control_group_scores.jsonl",
+      "sha256": "391b7247eb5814634fce6189b04caa1ee82dbf30f42d42a4dc8ea802413f7d79"
+    },
+    {
+      "path": "stage2/results/figure_group_scores.jsonl",
+      "sha256": "d3f7677d19f8a0f781daad68115da9c1b4aea0cc120fa1ecac8eee0e7d1b545d"
+    },
+    {
+      "path": "stage2/results/explanation_issues.jsonl",
+      "sha256": "aeac1d935cb0f55d950319889cb9858dbbaffc44374d5670278d6e099f0380a8"
+    },
+    {
+      "path": "stage2/metrics/overall.json",
+      "sha256": "5d59a75186baa14d90b303b2f33e4678fc6ab7f2b230dc979eccec7c1a46afc1"
+    },
+    {
+      "path": "stage2/metrics/VD.json",
+      "sha256": "64dd317a4da319d9e9de4637d220aa7a6a7b277eb5abe15891c22de184e96067"
+    },
+    {
+      "path": "stage2/metrics/VS.json",
+      "sha256": "7dbdefe574fbb9b888363199c472ea952258bd708a01650f4c4a89ab1c806fa0"
+    },
+    {
+      "path": "stage2/metrics/sensitivity.json",
+      "sha256": "3b08d2467af99d94f1bfc780ad4a715f3e91d28dd3e09b543386762a1a81e312"
+    },
+    {
+      "path": "stage2/metrics/judge_effects.json",
+      "sha256": "3d4e35bcad98488fc415d2e1bbd321788cd3dc0cf4dc8a622061905c3b9543d7"
+    },
+    {
+      "path": "stage2/metrics/table2_measured_counts.csv",
+      "sha256": "cc8f232040f21216d100aaa72ea378e90d5d855d89eca2e179fffeb350d919bf"
+    },
+    {
+      "path": "stage2/metrics/table3_measured_counts.csv",
+      "sha256": "4b8afdf6538ef0cd6e5628113210f3dfab1d1d54f2b4b287b1d266083da12598"
+    },
+    {
+      "path": "stage2/metrics/comparison_tables.json",
+      "sha256": "f34bbe9d3e8d817a97a44b300ee9f487f1d48d6b5c547439eef2ff9395bca1aa"
+    },
+    {
+      "path": "stage2/reports/judge_quality.json",
+      "sha256": "2dca7f9aa73f477d42eb05570d4769d454a84be38e9871b626a72046af964e68"
+    },
+    {
+      "path": "stage2/reports/consistency_audit_v2.json",
+      "sha256": "242f96374a03c0c13b2ee343f0e9aa3b69295235a213ee68a4310f83db8a1cb0"
+    },
+    {
+      "path": "stage2/reports/HallusionBench_Stage2_Report_zhTW.md",
+      "sha256": "2204d8ee2dc4f2e98230716f4450cdb62183c4e0dcb52275a5858a8809476dbf"
+    },
+    {
+      "path": "stage2/reports/report_content.json",
+      "sha256": "4c267ea5677fa94546e547330f9e0e55d295f0496105e6623dc48808beb9d012"
+    },
+    {
+      "path": "stage2/README.md",
+      "sha256": "329494d5600e9b9ec3fac6a424491c7433e06f596434e3a8f131021d0837319d"
+    },
+    {
+      "path": "stage2/figures/01_main_accuracy.png",
+      "sha256": "fcc80a3351bd9b7089db23daece1ce45a209925bcf838f3997d65a051fd01e69"
+    },
+    {
+      "path": "stage2/figures/02_easy_hard.png",
+      "sha256": "fa25fa30e1f746df6349ea5137a811b7077ab878b22f88654d2172d7ae7e88f2"
+    },
+    {
+      "path": "stage2/figures/03_original_edited.png",
+      "sha256": "7f433c97764679a23ddcbc1eab5b7ab7889986ba65eb401b9e8d330cac218172"
+    },
+    {
+      "path": "stage2/figures/04_yes_no_bias.png",
+      "sha256": "9c41bd6fb986df08bd44840bc6dc69cefb0fa8c8d4340af99a3bc3418a15f470"
+    },
+    {
+      "path": "stage2/figures/05_consistency.png",
+      "sha256": "d0578e46c10535d67762139f0777b5d0f2a0cde369583bac3985f2070a814c03"
+    },
+    {
+      "path": "stage2/figures/06_diagnostic_types.png",
+      "sha256": "e86c5cfc7126983e8b6ae647e61dfb99a7099ca1e3070e6abfffba6ee8c6520a"
+    },
+    {
+      "path": "stage2/figures/07_subcategory_accuracy.png",
+      "sha256": "87878ae9a66c53d969d4c928fb29e355cb18e0e407e4f8c62d653dab3c19aa0d"
+    },
+    {
+      "path": "stage2/figures/08_published_comparison.png",
+      "sha256": "bfda7fa1e0e3caa87938d41bfe324aeb847c1531c8ea9e0b326cd6fbb78e6947"
+    }
+  ],
+  "regenerated_pdf_pages": 20,
+  "regenerated_pdf_page_text_identical": true,
+  "model_weights_present": false,
+  "GPU_inference_performed": false,
+  "judge_api_calls": 0,
+  "independent_human_validation": false,
+  "note": "Byte-identical saved-label reconstruction and calculations; not a new semantic annotation accuracy test. PDF metadata timestamps may differ."
+}
