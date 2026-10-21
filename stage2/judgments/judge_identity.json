@@ -1,0 +1,8 @@
+{
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "xhigh",
+  "verification_source": "current conversation turn_context runtime record",
+  "verification_date": "2026-10-21",
+  "api_calls": 0,
+  "method": "in-session assistant semantic labeling"
+}

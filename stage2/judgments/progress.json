@@ -1,0 +1,13 @@
+{
+  "completed_batches": 47,
+  "judged_samples": 1129,
+  "expected_samples": 1129,
+  "nonbaseline_pair_relations": 674,
+  "first_pass_complete": true,
+  "quality_review_complete": true,
+  "second_pass_reviewed": 397,
+  "unfinished_annotations": 0,
+  "external_reference_disputes": 32,
+  "full_consistency_audit_v2_complete": true,
+  "full_consistency_audit_v2_items": 1129
+}
