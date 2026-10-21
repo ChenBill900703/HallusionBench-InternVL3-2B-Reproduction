@@ -1,6 +1,6 @@
 # HallusionBench 論文復現：用一張 8GB 顯示卡，檢查看圖模型是否真的看懂
 
-> **先看結論：**本專案讓 InternVL3-2B 回答全部 1,129 題。依官方評分規則，單題成績為 **54.65%**；但把同一問題的各種條件放在一起，只有 **22.42%** 的控制組全部答對。這說明「有些題目答對」與「換一種問法、換一張修改圖仍答對」是兩件事。
+> **先看結論：** 本專案讓 InternVL3-2B 回答全部 1,129 題。依官方評分規則，單題成績為 **54.65%**；但把同一問題的各種條件放在一起，只有 **22.42%** 的控制組全部答對。這說明「有些題目答對」與「換一種問法、換一張修改圖仍答對」是兩件事。
 
 這是 CVPR 2024 論文 **HallusionBench: An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models** 的評估流程復現，以及一個替代模型實驗。原作者為 Tianrui Guan、Fuxiao Liu 等人，來自 University of Maryland, College Park。
 
@@ -27,8 +27,8 @@ PDF 保留自行製作的八張統計圖；第三方案例原圖未再散布。�
 
 HallusionBench 希望分辨兩種容易混在一起的失誤：
 
-- **Language Hallucination（語言幻覺）**：模型沿用知識、慣用答案或語言線索，沒有適當依照當前圖像更新。例如看修改後地鐵圖，仍回答原本的路線。
-- **Visual Illusion（視覺誤判）**：模型收到視覺輸入，卻把大小、文字、角度、圖例或影格順序讀錯。例如兩個實際一樣大的圓，因周圍圖形不同而被說成一大一小。
+- **Language Hallucination（語言幻覺）** ：模型沿用知識、慣用答案或語言線索，沒有適當依照當前圖像更新。例如看修改後地鐵圖，仍回答原本的路線。
+- **Visual Illusion（視覺誤判）** ：模型收到視覺輸入，卻把大小、文字、角度、圖例或影格順序讀錯。例如兩個實際一樣大的圓，因周圍圖形不同而被說成一大一小。
 
 單看一個錯誤回答，通常無法知道是哪一種。作者因此建立原圖、修改圖與部分無圖條件的對照，再觀察同一模型如何改變答案。這些是依輸出與控制條件得到的**診斷分類**，不是直接讀到模型內部的想法。
 
@@ -50,7 +50,7 @@ HallusionBench 希望分辨兩種容易混在一起的失誤：
 | Figure Groups | 346 | 同一張實體圖的相關問題放成一組 |
 | 無圖／原圖／修改圖問答 | 178／447／504 | 這是題數，不能與圖片張數混用 |
 
-**VD（Visual Dependent）**必須依賴圖像，例如圖中角度、圓大小與影格順序。**VS（Visual Supplement）**可能先靠常識回答，但圖片會補充或改寫資訊，例如地圖、人口表及名人演說文字。
+**VD（Visual Dependent）** 必須依賴圖像，例如圖中角度、圓大小與影格順序。**VS（Visual Supplement）** 可能先靠常識回答，但圖片會補充或改寫資訊，例如地圖、人口表及名人演說文字。
 
 九種子類別為 VD 的 Illusion、Math、Video、Poster、Figure，以及 VS 的 Chart、Table、Map、OCR。官方資料欄位把 Poster 寫成 VD/ocr；本專案保留原欄位並加上論文名稱對照。Video 使用預先排好順序的影格拼圖 PNG，沒有額外解碼影片。
 
