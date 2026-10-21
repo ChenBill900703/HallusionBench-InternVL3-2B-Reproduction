@@ -1,0 +1,43 @@
+{
+  "all_selected": {
+    "n": 397,
+    "joint_agree": 374,
+    "joint_disagree": 23,
+    "semantic_agree": 387,
+    "semantic_disagree": 10,
+    "stance_agree": 376,
+    "stance_disagree": 21,
+    "joint_agreement_rate": 0.9420654911838791,
+    "semantic_agreement_rate": 0.9748110831234257
+  },
+  "preregistered_random": {
+    "n": 113,
+    "joint_agree": 110,
+    "joint_disagree": 3,
+    "semantic_agree": 113,
+    "semantic_disagree": 0,
+    "stance_agree": 110,
+    "stance_disagree": 3,
+    "joint_agreement_rate": 0.9734513274336283,
+    "semantic_agreement_rate": 1.0
+  },
+  "all_token_caps_reviewed": true,
+  "all_initial_uncertain_ambiguous_reviewed": true,
+  "adjudication_records": 25,
+  "additional_after_review_corrections": 2,
+  "unresolved_reference_disputes": 17,
+  "final_semantic_counts": {
+    "2": 172,
+    "0": 406,
+    "1": 551
+  },
+  "final_stance_counts": {
+    "uncertain": 104,
+    "yes": 507,
+    "no": 434,
+    "ambiguous": 84
+  },
+  "same_model_re_read": true,
+  "independent_human_validation": false,
+  "full_triple_judgment": false
+}
