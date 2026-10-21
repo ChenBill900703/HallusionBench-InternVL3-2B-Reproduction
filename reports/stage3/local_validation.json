@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "responses": 1129,
+  "question_groups": 455,
+  "figure_groups": 346,
+  "metrics_counts": {
+    "qAcc": [
+      102,
+      455
+    ],
+    "fAcc": [
+      100,
+      346
+    ],
+    "Easy": [
+      251,
+      455
+    ],
+    "Hard": [
+      193,
+      430
+    ],
+    "All": [
+      617,
+      1129
+    ]
+  },
+  "charts": 8,
+  "pdf_pages": 17,
+  "markdown_links": "passed",
+  "credential_value_scan": "passed",
+  "immutable_inputs": "unchanged",
+  "manifest_checked": true,
+  "GPU_inference": false,
+  "new_semantic_judging": false
+}

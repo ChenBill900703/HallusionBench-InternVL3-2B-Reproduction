@@ -1,0 +1,125 @@
+{
+  "passed": true,
+  "archives": [
+    {
+      "archive": "HallusionBench_Stage1_Results.zip",
+      "sha256": "f415c03bc7a7e86c84a28f3e8c8b234fb40efd0b32924099aca9854a19d4c637",
+      "payload_files_verified": 127,
+      "crc_passed": true
+    },
+    {
+      "archive": "HallusionBench_Stage2_Results.zip",
+      "sha256": "a80e07caab41eaeee3c1af83b27e318806a43f81a1d1eda8d154093c0621383f",
+      "payload_files_verified": 415,
+      "crc_passed": true
+    }
+  ],
+  "local_vs_archive_differences": [
+    {
+      "archive": "HallusionBench_Stage1_Results.zip",
+      "path": ".gitattributes",
+      "local_exists": true
+    },
+    {
+      "archive": "HallusionBench_Stage1_Results.zip",
+      "path": ".gitignore",
+      "local_exists": true
+    },
+    {
+      "archive": "HallusionBench_Stage1_Results.zip",
+      "path": "README.md",
+      "local_exists": true
+    }
+  ],
+  "responses": 1129,
+  "final_judgments": 1129,
+  "question_control_groups": 455,
+  "figure_groups": 346,
+  "original_images": 165,
+  "edited_images": 181,
+  "source_images_rehashed": 346,
+  "initial_batches": 47,
+  "historical_review_items": 397,
+  "v2_audit_items": 1129,
+  "pairs": 674,
+  "reference_disputes": 32,
+  "explanation_issues": 87,
+  "charts": 8,
+  "cases": 6,
+  "local_original_report_pages": 20,
+  "exported_source_files": 530,
+  "excluded": [
+    {
+      "path": "handoff/upstream_reference/README.md",
+      "sha256": "fcd8f415d3ff0a253cec9f5ed436467c43fa20c4530365bc30bc3d02dd1b9df8",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/illusion/0_0.png",
+      "sha256": "f2c53a42b3224574428b88bd68792c5a9612e58325dbeb9a3b04201214a85b8d",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/illusion/0_1.png",
+      "sha256": "920e2979a13edd719d31b31532a18e742795b5b555603cbaa18e19a836eabe14",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/ocr/13_0.png",
+      "sha256": "2555542c4ce1140b9905fcee0a2dd1f9c7932c42e976429a40af59d79fa53323",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/ocr/13_1.png",
+      "sha256": "688aff092c4c835f7c057fc02c9e51ef09f67d8825363995539dc06f93b66fd8",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/video/5_0.png",
+      "sha256": "78f513d6bcd37c5db92fbf5c38f9208a838709540eeab695c7ee070b46a893bd",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VD/video/5_1.png",
+      "sha256": "91f3526a081dd6c67ac1e67251d78e59947ea0ed7e253841b9c75ccfd74e718d",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VS/chart/7_1.png",
+      "sha256": "80d2c3c34f012be47eb616a1cf40b62ea2a60281ee49df437f5d770f385ee1e9",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VS/chart/7_2.png",
+      "sha256": "d37c60a6889a3f804f4a220b3fdb0c870e41131e68a977f91852657008a0ba70",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VS/map/6_1.png",
+      "sha256": "b94433b750a728cb6e1309f34d856f0586dd445bd15a9a02f52d839df955516f",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/figures/cases/VS/map/6_2.png",
+      "sha256": "93d6b7a55deadccb348a55a6e9b6244f5e2fc8c3a58ef08f816719c06cccabd1",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    },
+    {
+      "path": "stage2/reports/HallusionBench_Stage2_Report_zhTW.pdf",
+      "sha256": "524c0bc491376d896e2e3ddab5d51f6066608567cc08e86033bb79477f71aafd",
+      "reason": "third-party images, embedded image report, or upstream README embeds; retained locally; metadata retained"
+    }
+  ],
+  "privacy_redactions": [
+    {
+      "path": "logs/smoke_internvl.log",
+      "replacement_count": 4,
+      "source_sha256": "eac5ba123dfe7d66076ed9d13afba6eb35fef68b29280c59f1032071393fd663",
+      "published_sha256": "83ee07fb4de9e4b10793a73772da78ba26f254ddf74db318f2b2a26fcda7adaf",
+      "reason": "local Windows account directory name removed; experiment values unchanged"
+    }
+  ],
+  "raw_outputs_GT_final_labels_unchanged": true,
+  "GPU_inference_performed": false,
+  "new_semantic_judging_performed": false
+}

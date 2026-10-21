@@ -1,0 +1,7 @@
+{
+  "results/internvl3_2b_bf16_tiles12/full/responses.jsonl": "275cf6d3841511068cc0414a148018df8311df97f54b66833871ba2b794f7fde",
+  "data/manifests/ground_truth.jsonl": "bef5ba782c4d5505cf27e364e993ef462faefd3c5d8ba8053168f9ddcb182b43",
+  "data/manifests/inference.jsonl": "e134fdc4e8de12039f3c1e2d85c95e4f5fa2c2f80180622dbcfd7ec2687f0ede",
+  "stage2/results/judgments.jsonl": "18f8a828c9436dcf95258c5a34aca60a6deb215b6a5844572a60c739d62b8efa",
+  "stage2/results/pair_relations.jsonl": "c002a0ce1ce2a2539b4d428072cb800abfc8d35dba9a37748f784e52f0f296b2"
+}
