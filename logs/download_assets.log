@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\.bootstrap\gdown\download.py", line 488, in _get_download_response
+    url = get_url_from_gdrive_confirmation(contents)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\.bootstrap\gdown\download.py", line 87, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(
+gdown.exceptions.FileURLRetrievalError: Cannot retrieve the public link of the file. You may need to change the permission to 'Anyone with the link', or have had many accesses. Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\scripts\download_assets.py", line 49, in <module>
+    main()
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\scripts\download_assets.py", line 23, in main
+    gdown.download(id='1eeO1i0G9BSZTE1yd5XeFwmrbe1hwyf_0', output=str(target), quiet=False)
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\.bootstrap\gdown\download.py", line 862, in download
+    res, url = _get_download_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\HallusionBench An Advanced Diagnostic Suite for Entangled Language Hallucination and Visual Illusion in Large Vision-Language Models\.bootstrap\gdown\download.py", line 499, in _get_download_response
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Cannot retrieve the public link of the file. You may need to change
+	the permission to 'Anyone with the link', or have had many accesses.
+	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?id=1eeO1i0G9BSZTE1yd5XeFwmrbe1hwyf_0
+
+but Gdown can't. Please check connections and permissions.

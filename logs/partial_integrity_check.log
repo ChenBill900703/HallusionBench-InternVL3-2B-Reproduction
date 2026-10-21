@@ -1,0 +1,24 @@
+{
+  "run_name": "internvl3_2b_bf16_tiles12",
+  "expected_count": 1129,
+  "record_count": 305,
+  "successful_response_count": 305,
+  "duplicate_sample_ids": [],
+  "failures": [],
+  "image_hash_errors": [],
+  "structural_errors": [],
+  "status_counts": {
+    "success": 305
+  },
+  "condition_counts": {
+    "no_visual": 105,
+    "original": 97,
+    "edited": 103
+  },
+  "total_inference_seconds": 994.6482805997366,
+  "max_peak_allocated_gib": 5.470694065093994,
+  "max_peak_reserved_gib": 9.576171875,
+  "response_file_sha256": "0180c55c03bdfd58a52914681209e22825a383e8c88147d52b35d43725486a34",
+  "answer_correctness_evaluated": false,
+  "complete": false
+}

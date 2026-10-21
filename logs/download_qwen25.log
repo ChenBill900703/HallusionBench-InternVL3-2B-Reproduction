@@ -1,0 +1,11 @@
+Downloading Qwen/Qwen2.5-VL-3B-Instruct @ 66285546d2b821cf421d4f5eb2576359d3770cd3
+
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]
+Fetching 13 files:  23%|██▎       | 3/13 [00:00<00:01,  7.97it/s]
+Fetching 13 files:  46%|████▌     | 6/13 [00:00<00:00,  9.37it/s]
+Fetching 13 files:  69%|██████▉   | 9/13 [00:01<00:00,  6.55it/s]
+Fetching 13 files:  85%|████████▍ | 11/13 [00:20<00:03,  1.82s/it]
+Fetching 13 files:  92%|█████████▏| 12/13 [03:01<00:15, 15.11s/it]
+Fetching 13 files: 100%|██████████| 13/13 [03:20<00:00, 15.39s/it]
+Fetching 13 files: 100%|██████████| 13/13 [03:20<00:00, 15.39s/it]
+Completed Qwen/Qwen2.5-VL-3B-Instruct

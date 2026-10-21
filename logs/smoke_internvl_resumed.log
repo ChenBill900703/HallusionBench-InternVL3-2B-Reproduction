@@ -1,0 +1,48 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+FlashAttention2 is not installed.
+{"event": "model_loaded", "run": "internvl3_2b_bf16_tiles12", "pending": 22, "load_seconds": 5.738014300004579, "vram_bytes": 4178806272}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/table/0/0/0", "status": "success", "seconds": 5.233, "processed": 1, "remaining": 21, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/table/0/1/0", "status": "success", "seconds": 2.532, "processed": 2, "remaining": 20, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/table/0/2/0", "status": "success", "seconds": 2.333, "processed": 3, "remaining": 19, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/map/0/0/0", "status": "success", "seconds": 0.419, "processed": 4, "remaining": 18, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/map/0/1/0", "status": "success", "seconds": 1.858, "processed": 5, "remaining": 17, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/map/0/2/0", "status": "success", "seconds": 1.761, "processed": 6, "remaining": 16, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/ocr/0/0/0", "status": "success", "seconds": 3.079, "processed": 7, "remaining": 15, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/ocr/0/1/0", "status": "success", "seconds": 2.596, "processed": 8, "remaining": 14, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/ocr/0/2/0", "status": "success", "seconds": 2.42, "processed": 9, "remaining": 13, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/illusion/0/0/0", "status": "success", "seconds": 2.91, "processed": 10, "remaining": 12, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/illusion/0/1/0", "status": "success", "seconds": 2.228, "processed": 11, "remaining": 11, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/math/0/0/0", "status": "success", "seconds": 2.558, "processed": 12, "remaining": 10, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/math/0/1/0", "status": "success", "seconds": 4.152, "processed": 13, "remaining": 9, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/ocr/0/0/0", "status": "success", "seconds": 2.887, "processed": 14, "remaining": 8, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/ocr/0/1/0", "status": "success", "seconds": 2.531, "processed": 15, "remaining": 7, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/figure/0/0/0", "status": "success", "seconds": 1.531, "processed": 16, "remaining": 6, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/figure/0/1/0", "status": "success", "seconds": 2.598, "processed": 17, "remaining": 5, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/video/0/0/0", "status": "success", "seconds": 1.294, "processed": 18, "remaining": 4, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VD/video/0/1/0", "status": "success", "seconds": 1.29, "processed": 19, "remaining": 3, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/chart/17/1/0", "status": "success", "seconds": 4.392, "processed": 20, "remaining": 2, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/chart/17/2/0", "status": "success", "seconds": 4.442, "processed": 21, "remaining": 1, "error": null}
+Setting `pad_token_id` to `eos_token_id`:151645 for open-end generation.
+{"event": "sample", "sample_id": "VS/map/8/2/0", "status": "success", "seconds": 2.411, "processed": 22, "remaining": 0, "error": null}
+{"event": "process_cleanup", "allocated": 33554432}

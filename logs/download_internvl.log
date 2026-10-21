@@ -1,0 +1,12 @@
+Downloading OpenGVLab/InternVL3-2B @ 899155015275a9b7338c7f4677e19c784e0e5a21
+
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]
+Fetching 16 files:  19%|█▉        | 3/16 [00:00<00:01,  9.14it/s]
+Fetching 16 files:  38%|███▊      | 6/16 [00:00<00:00, 10.51it/s]
+Fetching 16 files:  56%|█████▋    | 9/16 [00:00<00:00,  9.35it/s]
+Fetching 16 files:  75%|███████▌  | 12/16 [00:01<00:00,  9.20it/s]
+Fetching 16 files:  94%|█████████▍| 15/16 [00:01<00:00,  8.61it/s]
+Fetching 16 files:  94%|█████████▍| 15/16 [00:20<00:01,  1.33s/it]
+Fetching 16 files: 100%|██████████| 16/16 [01:57<00:00,  7.37s/it]
+Fetching 16 files: 100%|██████████| 16/16 [01:57<00:00,  7.37s/it]
+Completed OpenGVLab/InternVL3-2B
