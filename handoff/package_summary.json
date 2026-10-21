@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-21T07:49:48.176161+00:00",
+  "stage": 1,
+  "models_actually_run": [
+    "OpenGVLab/InternVL3-2B"
+  ],
+  "full_dataset_successful_raw_responses": 1129,
+  "no_answer_grading_performed": true,
+  "question_groups": 455,
+  "unique_images": 346,
+  "stage2_batches": 47,
+  "omitted_assets": "All image pixels and model weights omitted. Image paths, hashes, source URLs and pinned download metadata included."
+}
