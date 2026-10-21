@@ -1,0 +1,21 @@
+{
+  "run_name": "internvl3_2b_bf16_tiles12_rerun",
+  "backend": "internvl",
+  "model_name": "OpenGVLab/InternVL3-2B",
+  "revision": "899155015275a9b7338c7f4677e19c784e0e5a21",
+  "local_model_path": "models/internvl3_2b",
+  "dtype": "bfloat16",
+  "quantization": "none",
+  "batch_size": 1,
+  "seed": 42,
+  "max_dynamic_tiles": 12,
+  "use_thumbnail": true,
+  "tile_size": 448,
+  "attention": "official_eager_no_flash_attn",
+  "prompt_template": "Answer the following question with Yes or No, then briefly explain your answer. If the available information is insufficient, say that you cannot determine the answer.\nQuestion: {question}",
+  "generation": {
+    "max_new_tokens": 128,
+    "do_sample": false,
+    "num_beams": 1
+  }
+}
