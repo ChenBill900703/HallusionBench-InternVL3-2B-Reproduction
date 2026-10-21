@@ -1,0 +1,733 @@
+{
+  "OpenGVLab/InternVL3-2B": {
+    "_id": "67f7f47dbaa44f9416a5d866",
+    "id": "OpenGVLab/InternVL3-2B",
+    "private": false,
+    "pipeline_tag": "image-text-to-text",
+    "library_name": "transformers",
+    "tags": [
+      "transformers",
+      "safetensors",
+      "internvl_chat",
+      "feature-extraction",
+      "internvl",
+      "custom_code",
+      "image-text-to-text",
+      "conversational",
+      "multilingual",
+      "dataset:OpenGVLab/MMPR-v1.2",
+      "arxiv:2312.14238",
+      "arxiv:2404.16821",
+      "arxiv:2412.05271",
+      "arxiv:2411.10442",
+      "arxiv:2504.10479",
+      "arxiv:2412.09616",
+      "base_model:OpenGVLab/InternVL3-2B-Instruct",
+      "base_model:finetune:OpenGVLab/InternVL3-2B-Instruct",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "downloads": 11125,
+    "likes": 47,
+    "modelId": "OpenGVLab/InternVL3-2B",
+    "author": "OpenGVLab",
+    "sha": "899155015275a9b7338c7f4677e19c784e0e5a21",
+    "lastModified": "2025-09-11T12:49:13.000Z",
+    "gated": false,
+    "disabled": false,
+    "model-index": null,
+    "config": {
+      "architectures": [
+        "InternVLChatModel"
+      ],
+      "auto_map": {
+        "AutoConfig": "configuration_internvl_chat.InternVLChatConfig",
+        "AutoModel": "modeling_internvl_chat.InternVLChatModel",
+        "AutoModelForCausalLM": "modeling_internvl_chat.InternVLChatModel"
+      },
+      "model_type": "internvl_chat",
+      "tokenizer_config": {
+        "bos_token": null,
+        "chat_template": "{%- if messages[0]['role'] == 'system' %}{{- '<|im_start|>system\n' + messages[0]['content'] + '<|im_end|>\n' }}{%- else %}{{- '<|im_start|>system\n\u4f60\u662f\u4e66\u751f\u00b7\u4e07\u8c61\uff0c\u82f1\u6587\u540d\u662fInternVL\uff0c\u662f\u7531\u4e0a\u6d77\u4eba\u5de5\u667a\u80fd\u5b9e\u9a8c\u5ba4\u3001\u6e05\u534e\u5927\u5b66\u53ca\u591a\u5bb6\u5408\u4f5c\u5355\u4f4d\u8054\u5408\u5f00\u53d1\u7684\u591a\u6a21\u6001\u5927\u8bed\u8a00\u6a21\u578b\u3002<|im_end|>\n' }}{%- endif %}{% for message in messages %}{%- if messages[0]['role'] != 'system' or not loop.first %}{{'<|im_start|>' + message['role'] + '\n'}}{% if message['content'] is string %}{{ message['content'] }}{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' %}{{ '<image>\n' }}{% elif content['type'] == 'video' %}{{ '<video>\n' }}{% elif content['type'] == 'text' %}{{ content['text'] }}{% endif %}{% endfor %}{% endif %}{{'<|im_end|>\n'}}{%- endif %}{% endfor %}{% if add_generation_prompt %}{{'<|im_start|>assistant\n' }}{% endif %}",
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|endoftext|>",
+        "unk_token": null
+      }
+    },
+    "cardData": {
+      "license": "apache-2.0",
+      "license_name": "qwen",
+      "license_link": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE",
+      "pipeline_tag": "image-text-to-text",
+      "library_name": "transformers",
+      "base_model": [
+        "OpenGVLab/InternVL3-2B-Instruct"
+      ],
+      "base_model_relation": "finetune",
+      "datasets": [
+        "OpenGVLab/MMPR-v1.2"
+      ],
+      "language": [
+        "multilingual"
+      ],
+      "tags": [
+        "internvl",
+        "custom_code"
+      ]
+    },
+    "transformersInfo": {
+      "auto_model": "AutoModel",
+      "custom_class": "modeling_internvl_chat.InternVLChatModel",
+      "pipeline_tag": "feature-extraction"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes",
+        "blobId": "772d8e84809a01c0f4fb9509a89d2f60ca5e8496",
+        "size": 1634
+      },
+      {
+        "rfilename": "README.md",
+        "blobId": "4de14c75b9795258c897b928c7d171d18e39455d",
+        "size": 35849
+      },
+      {
+        "rfilename": "added_tokens.json",
+        "blobId": "dd972e4080e791eab591742c1168ee7fd6279146",
+        "size": 790
+      },
+      {
+        "rfilename": "config.json",
+        "blobId": "91b5777a06c1fb806d054ff69152177444256fbf",
+        "size": 6328
+      },
+      {
+        "rfilename": "configuration_intern_vit.py",
+        "blobId": "7e630c456eb9cf350e55bf850c3ff72f445a7e17",
+        "size": 5548
+      },
+      {
+        "rfilename": "configuration_internvl_chat.py",
+        "blobId": "502772cc6e24e6d1fbc5bf91ce76c9b234101eaf",
+        "size": 4036
+      },
+      {
+        "rfilename": "conversation.py",
+        "blobId": "5a771766f21ce3aeeb99b286fb8d188b0038a547",
+        "size": 15309
+      },
+      {
+        "rfilename": "examples/image1.jpg",
+        "blobId": "fd9891ef7e00774157a9dcd726b2ea9fa0c5ecff",
+        "size": 78073
+      },
+      {
+        "rfilename": "examples/image2.jpg",
+        "blobId": "09af6e4e6aa5656cd6d6c545780be523d752e3ca",
+        "size": 125656,
+        "lfs": {
+          "sha256": "08487494b8dc08d44bc36491adf3ab89ff30d13a3122da86f3cd67cad89eeee8",
+          "size": 125656,
+          "pointerSize": 131
+        }
+      },
+      {
+        "rfilename": "examples/red-panda.mp4",
+        "blobId": "28ff3b1291a2cb3525220a86a2b2b17156735848",
+        "size": 1867237,
+        "lfs": {
+          "sha256": "d921c07bb97224d65a37801541d246067f0d506f08723ffa1ad85c217907ccb8",
+          "size": 1867237,
+          "pointerSize": 132
+        }
+      },
+      {
+        "rfilename": "generation_config.json",
+        "blobId": "467e2ba8edc477ad1fb650f892ab5be9210522ab",
+        "size": 69
+      },
+      {
+        "rfilename": "merges.txt",
+        "blobId": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7",
+        "size": 1671853
+      },
+      {
+        "rfilename": "model.safetensors",
+        "blobId": "c315ae3079954f551c73aad69e7c4830bb4d5fce",
+        "size": 4177999192,
+        "lfs": {
+          "sha256": "18b4cdbc8eab790f447feac717f4d0cecbb85caf8df198b3b2401c22506858e7",
+          "size": 4177999192,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "modeling_intern_vit.py",
+        "blobId": "eb4aef44ddace5782035f0316de3834563b1c8dd",
+        "size": 18099
+      },
+      {
+        "rfilename": "modeling_internvl_chat.py",
+        "blobId": "ccf2ab9cc83283f41aafb611d379c4cc50614132",
+        "size": 15971
+      },
+      {
+        "rfilename": "preprocessor_config.json",
+        "blobId": "dfd7e50d9d4e67cd679b16b337b419a0c6cfa849",
+        "size": 287
+      },
+      {
+        "rfilename": "special_tokens_map.json",
+        "blobId": "ac23c0aaa2434523c494330aeb79c58395378103",
+        "size": 613
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "blobId": "1b4f039248a420730cd195d6d6a1a9cc713a7f14",
+        "size": 7033297
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "blobId": "f18c701c825405350d5f0ae158749015b3239e6e",
+        "size": 7330
+      },
+      {
+        "rfilename": "vocab.json",
+        "blobId": "6bce3a0a3866c4791a74d83d78f6824c3af64ec3",
+        "size": 3383407
+      }
+    ],
+    "spaces": [
+      "ybaddam8/satquery-inference"
+    ],
+    "createdAt": "2025-04-10T16:40:29.000Z",
+    "safetensors": {
+      "parameters": {
+        "BF16": 2088957440
+      },
+      "total": 2088957440
+    },
+    "usedStorage": 4179992085
+  },
+  "Qwen/Qwen2.5-VL-3B-Instruct": {
+    "_id": "6795ff8f7534713f94918fc5",
+    "id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "private": false,
+    "pipeline_tag": "image-text-to-text",
+    "library_name": "transformers",
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen2_5_vl",
+      "image-text-to-text",
+      "multimodal",
+      "conversational",
+      "en",
+      "arxiv:2309.00071",
+      "arxiv:2409.12191",
+      "arxiv:2308.12966",
+      "eval-results",
+      "text-generation-inference",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "downloads": 1844374,
+    "likes": 732,
+    "modelId": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "author": "Qwen",
+    "sha": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "lastModified": "2025-04-06T16:23:42.000Z",
+    "gated": false,
+    "disabled": false,
+    "widgetData": [
+      {
+        "text": "Hi, what can you help me with?"
+      },
+      {
+        "text": "What is 84 * 3 / 2?"
+      },
+      {
+        "text": "Tell me an interesting fact about the universe!"
+      },
+      {
+        "text": "Explain quantum computing in simple terms."
+      }
+    ],
+    "model-index": null,
+    "config": {
+      "architectures": [
+        "Qwen2_5_VLForConditionalGeneration"
+      ],
+      "model_type": "qwen2_5_vl",
+      "processor_config": {
+        "chat_template": "{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages %}{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}<|im_start|>{{ message['role'] }}\n{% if message['content'] is string %}{{ message['content'] }}<|im_end|>\n{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' or 'image' in content or 'image_url' in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}: {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content['type'] == 'video' or 'video' in content %}{% set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{% elif 'text' in content %}{{ content['text'] }}{% endif %}{% endfor %}<|im_end|>\n{% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant\n{% endif %}"
+      },
+      "tokenizer_config": {
+        "bos_token": null,
+        "chat_template": "{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages %}{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}<|im_start|>{{ message['role'] }}\n{% if message['content'] is string %}{{ message['content'] }}<|im_end|>\n{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' or 'image' in content or 'image_url' in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}: {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content['type'] == 'video' or 'video' in content %}{% set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{% elif 'text' in content %}{{ content['text'] }}{% endif %}{% endfor %}<|im_end|>\n{% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant\n{% endif %}",
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|endoftext|>",
+        "unk_token": null
+      }
+    },
+    "cardData": {
+      "license_name": "qwen-research",
+      "license_link": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE",
+      "language": [
+        "en"
+      ],
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "multimodal"
+      ],
+      "library_name": "transformers"
+    },
+    "transformersInfo": {
+      "auto_model": "AutoModelForMultimodalLM",
+      "pipeline_tag": "image-text-to-text",
+      "processor": "AutoProcessor"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes",
+        "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+        "size": 1519
+      },
+      {
+        "rfilename": "LICENSE",
+        "blobId": "87f48cf86671d627b4dd4b8e5189b8e32ae11dd8",
+        "size": 7387
+      },
+      {
+        "rfilename": "README.md",
+        "blobId": "d09bc2825f7d1dc394ee6766e2e95bcc59f47196",
+        "size": 18276
+      },
+      {
+        "rfilename": "chat_template.json",
+        "blobId": "732bd68bc5427d1fb6c06a59b3bf2456b2155d24",
+        "size": 1050
+      },
+      {
+        "rfilename": "config.json",
+        "blobId": "0ae1866f05ab0153ad293bdc92bb1b842c4d95b1",
+        "size": 1373
+      },
+      {
+        "rfilename": "generation_config.json",
+        "blobId": "1dfafa23e24b68b694722c6211e7da36730e9917",
+        "size": 216
+      },
+      {
+        "rfilename": "merges.txt",
+        "blobId": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+        "size": 1671839
+      },
+      {
+        "rfilename": "model-00001-of-00002.safetensors",
+        "blobId": "dd4783960cb71fbd0619490ca3a79c0206fd0d0f",
+        "size": 3982649232,
+        "lfs": {
+          "sha256": "41a8895c164b4d32bae6b302f4603fcbc1797f32dafa45c7e9bcda23c6755df8",
+          "size": 3982649232,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model-00002-of-00002.safetensors",
+        "blobId": "44271c4ddd0b2097992bf4be145d368042329861",
+        "size": 3526688744,
+        "lfs": {
+          "sha256": "365531ff8752420e89dee707b79d021fb2d6e25abafe486f080555a4fe6972e4",
+          "size": 3526688744,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model.safetensors.index.json",
+        "blobId": "7a3ec4f48662e38593f8cab48fe12a4f28003aba",
+        "size": 65448
+      },
+      {
+        "rfilename": "preprocessor_config.json",
+        "blobId": "7f3b746825e5eef53ed8ed57a91df9e86ee62c0a",
+        "size": 350
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "blobId": "443909a61d429dff23010e5bddd28ff530edda00",
+        "size": 7031645
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "blobId": "91684ea3dc135a7d815e2c932054ce88c1aab41f",
+        "size": 5702
+      },
+      {
+        "rfilename": "vocab.json",
+        "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+        "size": 2776833
+      }
+    ],
+    "spaces": [
+      "embedl/hfviewer",
+      "alexnasa/Wan2.2-Animate-ZEROGPU",
+      "fastgpu/vram-and-gpu-cost-calculator",
+      "emanforhelp/model-pulse",
+      "Fasces/Voltumnae-Wan2.2-I2V",
+      "multimodalart/self-forcing",
+      "alexnasa/Chain-of-Zoom",
+      "fffiloni/Meigen-MultiTalk",
+      "Heartsync/VEO3-RealTime",
+      "prithivMLmods/Qwen3-VL-Outpost",
+      "AgentFlow/agentflow",
+      "artificialguybr/qwen-vl",
+      "hadadrjt/ai",
+      "OmniLottie/OmniLottie",
+      "fffiloni/Wan2.1-VACE-1.3B",
+      "TIGER-Lab/MEGA-Bench",
+      "fffiloni/Wan2.1",
+      "multimodalart/OmniSVG-3B",
+      "FunAudioLLM/PrismAudio",
+      "IndexTeam/AnisoraV3",
+      "fffiloni/SCAIL-2",
+      "ginigen/Wan-2.2-Enhanced",
+      "fffiloni/Reward-Forcing",
+      "KingNish/Qwen-VL",
+      "mrdbourke/Qwen2.5-VL-Instruct-Demo",
+      "dmorawiec/Qwen-VL-Object-Detection",
+      "jairwaal/image",
+      "TencentARC/RollingForcing",
+      "build-small-hackathon/xray-anything",
+      "dipta007/OracleZoom",
+      "build-small-hackathon/iris",
+      "herokominato/Wan2.2-Animate-ZEROGPU",
+      "prithivMLmods/NAVA-Text-to-Video",
+      "KempnerInstituteAI/LVP",
+      "YinmingHuang/StableAvatar",
+      "Westlake-AGI-Lab/FlowDirector",
+      "Chrisyichuan/Omniscient",
+      "umint/openwebui",
+      "haodongli/RollingSink",
+      "prithivMLmods/Multimodal-Edge-Node",
+      "build-small-hackathon/naija-solar",
+      "Tingwei1123/Qwen2.5-vl-3B",
+      "wana14/Wan-2.2-5B",
+      "aadarsh99/ConverSeg",
+      "stevenbucaille/ScouterAI",
+      "multimodalart/LiveEdit",
+      "awacke1/Leaderboard-Deepseek-Gemini-Grok-GPT-Qwen",
+      "tsi-org/pixio-video-stream",
+      "mcjhn/ai",
+      "Jakob08/moneychatbot",
+      "marcelo1126/InfiniteTalk",
+      "vaibhavpandeyvpz/wan2.2-text-image-to-video",
+      "Smriti77/sign-language-converter",
+      "AleTBM/AI_Agent",
+      "jeannassereldine/object_description",
+      "jbilcke-hf/NON_WORKING_matrix_game_2",
+      "jieye06/OmniSVG-3B",
+      "Secondprinsipal/image",
+      "vaibhavpandeyvpz/wan2.1-flf2v-image-to-video",
+      "PanchamJ/wan2.1-flf2v-image-to-video",
+      "AsadIsmail/ternary-quant-demo",
+      "build-small-hackathon/GAHAKU-EXAM",
+      "build-small-hackathon/curbcheck",
+      "NERueda/video_anomaly_detection",
+      "ariG23498/qwen25vl-api",
+      "sergiopaniego/qwen25vl-api",
+      "BahadirGLCK/video_splitter",
+      "Dobezor/ChatDobezor",
+      "maffia/vace-demo",
+      "ankandrew/Qwen2.5VL",
+      "Natsu-Error/Solar-Rooftop-Analyzer",
+      "abdelrahman-ammar/basira",
+      "Omniscient001/Omniscient",
+      "NO0000000001/qwen_2.5",
+      "SarowarSaurav/Finetuned-SLM",
+      "martylabs/Meigen-MultiTalk",
+      "asifHuggingFace/webui",
+      "rahul7star/wan2.2TITV5BRepo",
+      "rahul7star/infinitetalk",
+      "johnenigmask12/SmartS",
+      "huggingfaceramki/Ramkiran_searchgpt",
+      "Kingoteam/Qwen2.5-vl-3B-demo",
+      "bioliveir4/agentflow2",
+      "fagun18/fagun-browser-testing",
+      "ShalomKing/infinitetalk",
+      "Hshsh0877/Youtubeiii",
+      "Kimhi/CARES",
+      "FarmerlineML/infinitetalk",
+      "deekshitha11/sign-language-converter",
+      "arjun10g/zeroshotGPU",
+      "Zeyad-Alaa/pageui-ai-analysis",
+      "build-small-hackathon/Apiarist",
+      "eggman-poff/trackwhat-small",
+      "zidanmubarak/jawi-transliterasi-demo",
+      "build-small-hackathon/small-cuts-live",
+      "build-small-hackathon/third-eye",
+      "Shinzmann/naija-solar",
+      "DRIVNIX/QUANTIS",
+      "loveseries/SCAIL-2",
+      "lybdalkhalq721/Qwen3-VL-Demo"
+    ],
+    "createdAt": "2025-01-26T09:25:35.000Z",
+    "safetensors": {
+      "parameters": {
+        "BF16": 3754622976
+      },
+      "total": 3754622976
+    },
+    "usedStorage": 7509337976
+  },
+  "Qwen/Qwen3-VL-2B-Instruct": {
+    "_id": "68f4e3f4f82416217114139c",
+    "id": "Qwen/Qwen3-VL-2B-Instruct",
+    "private": false,
+    "pipeline_tag": "image-text-to-text",
+    "library_name": "transformers",
+    "tags": [
+      "transformers",
+      "safetensors",
+      "qwen3_vl",
+      "image-text-to-text",
+      "conversational",
+      "arxiv:2505.09388",
+      "arxiv:2502.13923",
+      "arxiv:2409.12191",
+      "arxiv:2308.12966",
+      "license:apache-2.0",
+      "eval-results",
+      "endpoints_compatible",
+      "deploy:azure",
+      "region:us"
+    ],
+    "downloads": 2099115,
+    "likes": 501,
+    "modelId": "Qwen/Qwen3-VL-2B-Instruct",
+    "author": "Qwen",
+    "sha": "89644892e4d85e24eaac8bacfd4f463576704203",
+    "lastModified": "2025-10-23T11:30:44.000Z",
+    "gated": false,
+    "disabled": false,
+    "widgetData": [
+      {
+        "text": "Hi, what can you help me with?"
+      },
+      {
+        "text": "What is 84 * 3 / 2?"
+      },
+      {
+        "text": "Tell me an interesting fact about the universe!"
+      },
+      {
+        "text": "Explain quantum computing in simple terms."
+      }
+    ],
+    "model-index": null,
+    "config": {
+      "architectures": [
+        "Qwen3VLForConditionalGeneration"
+      ],
+      "model_type": "qwen3_vl",
+      "processor_config": {
+        "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' }}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- for message in messages %}\n    {%- if message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content_item in message.content %}\n                {%- if 'text' in content_item %}\n                    {{- content_item.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and message.content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n"
+      },
+      "tokenizer_config": {
+        "bos_token": null,
+        "chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0].role == 'system' %}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n\\n' }}\n    {%- endif %}\n    {{- \"# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {{- '<|im_start|>system\\n' }}\n        {%- if messages[0].content is string %}\n            {{- messages[0].content }}\n        {%- else %}\n            {%- for content in messages[0].content %}\n                {%- if 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- for message in messages %}\n    {%- if message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role + '\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content_item in message.content %}\n                {%- if 'text' in content_item %}\n                    {{- content_item.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {%- if message.tool_calls %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if (loop.first and message.content) or (not loop.first) %}\n                    {{- '\\n' }}\n                {%- endif %}\n                {%- if tool_call.function %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {{- '<tool_call>\\n{\"name\": \"' }}\n                {{- tool_call.name }}\n                {{- '\", \"arguments\": ' }}\n                {%- if tool_call.arguments is string %}\n                    {{- tool_call.arguments }}\n                {%- else %}\n                    {{- tool_call.arguments | tojson }}\n                {%- endif %}\n                {{- '}\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.first or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {%- if message.content is string %}\n            {{- message.content }}\n        {%- else %}\n            {%- for content in message.content %}\n                {%- if content.type == 'image' or 'image' in content or 'image_url' in content %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                    {%- if add_vision_id %}Picture {{ image_count.value }}: {% endif -%}\n                    <|vision_start|><|image_pad|><|vision_end|>\n                {%- elif content.type == 'video' or 'video' in content %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                    {%- if add_vision_id %}Video {{ video_count.value }}: {% endif -%}\n                    <|vision_start|><|video_pad|><|vision_end|>\n                {%- elif 'text' in content %}\n                    {{- content.text }}\n                {%- endif %}\n            {%- endfor %}\n        {%- endif %}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+        "eos_token": "<|im_end|>",
+        "pad_token": "<|endoftext|>",
+        "unk_token": null
+      }
+    },
+    "cardData": {
+      "license": "apache-2.0",
+      "pipeline_tag": "image-text-to-text",
+      "library_name": "transformers"
+    },
+    "transformersInfo": {
+      "auto_model": "AutoModelForMultimodalLM",
+      "pipeline_tag": "image-text-to-text",
+      "processor": "AutoProcessor"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes",
+        "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+        "size": 1519
+      },
+      {
+        "rfilename": "README.md",
+        "blobId": "13afcb1d2c695b57ebe4ee740db48671069566ce",
+        "size": 7136
+      },
+      {
+        "rfilename": "chat_template.json",
+        "blobId": "e49e75bdda104c8de941eb20e0b3765184fb27bc",
+        "size": 5502
+      },
+      {
+        "rfilename": "config.json",
+        "blobId": "0cd8c646eb55794594b14fefcd1d3acea5cc000f",
+        "size": 1505
+      },
+      {
+        "rfilename": "generation_config.json",
+        "blobId": "7bb37933d2d86e4ceaabcc6540be989658f238e9",
+        "size": 269
+      },
+      {
+        "rfilename": "merges.txt",
+        "blobId": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+        "size": 1671839
+      },
+      {
+        "rfilename": "model.safetensors",
+        "blobId": "756540b03375b1bb98d2b4b2c562f02eaf569821",
+        "size": 4255140312,
+        "lfs": {
+          "sha256": "7de1838c87a5349b016c26a1c3f7d2bc400a3d485f95ef39a7059ffd734977a0",
+          "size": 4255140312,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "preprocessor_config.json",
+        "blobId": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+        "size": 390
+      },
+      {
+        "rfilename": "tokenizer.json",
+        "blobId": "c6cc1014128b19d1fc46b1d30a23e3b1d35db421",
+        "size": 7032403
+      },
+      {
+        "rfilename": "tokenizer_config.json",
+        "blobId": "d3d3763207692c78780f4bf42d4dadf49a5c8012",
+        "size": 10868
+      },
+      {
+        "rfilename": "video_preprocessor_config.json",
+        "blobId": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+        "size": 385
+      },
+      {
+        "rfilename": "vocab.json",
+        "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+        "size": 2776833
+      }
+    ],
+    "spaces": [
+      "M3st3rJ4k3l/FLUX.2-Klein-Multi-LoRA-v2",
+      "embedl/hfviewer",
+      "fastgpu/vram-and-gpu-cost-calculator",
+      "nvidia/Cosmos3-Action-Viewer",
+      "emanforhelp/model-pulse",
+      "prithivMLmods/Qwen3-VL-Outpost",
+      "artificialguybr/qwen-vl",
+      "baohuynhbk14/Qwen3-VL-Demo",
+      "dmorawiec/Qwen-VL-Object-Detection",
+      "frgfm/torch-cam",
+      "tori29umai/QwenImageEdit_lite",
+      "akhaliq/Qwen3-VL-2B-Instruct",
+      "build-small-hackathon/iris",
+      "artificialguybr/CanIRunThisLLM",
+      "qgallouedec/tito",
+      "Vision-CAIR-Admin/Tempo",
+      "prithivMLmods/Multimodal-Edge-Node",
+      "broadfield-dev/qwen3-vl-2b-instruct",
+      "Slait/Caption_Qwen-vl",
+      "mrdbourke/multimodal-rag-with-nemotron",
+      "cfoli/ChestVision-PRO",
+      "mutaician/robohazard-arena",
+      "nvidia/Cosmos3-Action-Viewer-Prerelease",
+      "Boozelee/baker-street-laboratory-v2",
+      "zaleni/wsa1-robot-control",
+      "lybdalkhalq721/Qwen3-VL-Demo",
+      "Kingprince24/satquery-ai-vqa",
+      "rudhratej09/satquery-agentic",
+      "zhangbaoxin/test",
+      "tuandunghcmut/corgi-qwen3-vl-demo",
+      "broadfield-dev/url2markdown",
+      "AbhinavPJ/QWEN_tryingout",
+      "Takaya1029/deepseekocr_forwebapp",
+      "jimmy-nycu/DS",
+      "zhangbaoxin/Qwen-VL-Object-Detection",
+      "Rbpppp/ticket-ocr",
+      "EthanCastro/quickdraw-tldraw-app",
+      "Abdualkhaliq1415/Docker",
+      "KinetoLabs/Qwen3-VL-Demo-SmokeTest",
+      "mikework/Qwen-VL-Object-Detection",
+      "dsa2dsads/Qwen3-VL-Outpost",
+      "notiv/Qwen3-VL-Outpost",
+      "codemo/x-guard",
+      "Chhagan005/Chhagan-DocVL-Demo",
+      "tuandunghcmut/mllm-dla-demo",
+      "tuandunghcmut/mllm-dla-demo-gradio",
+      "tuandunghcmut/qwen3vl-2b-dla-demo",
+      "tuandunghcmut/qwen3vl-2b-dla-zero-gpu",
+      "HarrySoteriou/video-inference-zerogpu-space",
+      "navjotk/copied_multimodal-rag-with-nemotron",
+      "Cabdi1/Caption_Qwen-vl",
+      "omar7421/multimodal-rag-with-nemotron",
+      "Krakerberus/KraVision",
+      "asdasdAsdfA23/chvzh_ocr",
+      "JSCPPProgrammer/gensearcher-firered",
+      "forseebench/QA_Verification",
+      "AnishHF/Qwen3-VL-Demo",
+      "BIGJUTT/Multimodal-Edge-Node",
+      "2045max/qwen3-vl-2b-demo",
+      "Kushtrim/Qwen3-VL-2B-Instruct-Shqip",
+      "99fps/fridge-recipe",
+      "hogard98/lenta-price-tag-recognition",
+      "SwingRain/Tempo",
+      "ong365/multimodal-rag-with-nemotron",
+      "Boozelee/baker-street-laboratory",
+      "oumaimabck/multimodal-rag-with-nemotron",
+      "cian-ps/nemotron-vl-rag-pipeline-pokemon",
+      "AbstractPhil/qwen-caption-array",
+      "nextmarte/iris",
+      "devsu/multimodal-rag-nemotron",
+      "kzrsk/lensmora-curate-worker-4",
+      "kzrsk/lensmora-curate-worker-2",
+      "kzrsk/lensmora-curate-worker-6",
+      "kzrsk/lensmora-curate-worker",
+      "kzrsk/lensmora-curate-worker-1",
+      "kzrsk/lensmora-curate-worker-3",
+      "kzrsk/lensmora-curate-worker-5",
+      "peleg34/sign-language-bridge",
+      "ngohel58/DWG_Balloon_LIST",
+      "ngohel58/Drawing_Extraction",
+      "localellm/WebGPU-qwen3-vl-2b-instruct-gguf",
+      "AlanaSky/Cosmos3-Action-Viewer",
+      "linlin88/video-corpus-rag",
+      "rentz77/ocr-Go",
+      "Vig2803/multimodal-rag",
+      "Abhishek-ag-1112/statquery",
+      "erwinramirez220/seefix-agents",
+      "jpedrops/docuement-tts",
+      "ShamikDas-Dev/medscope-image-router",
+      "tamkeenSara/parallax-poc",
+      "Mikemugen/ochevid-vl-demo",
+      "Naaditre/FLUX.2-Klein-Multi-LoRA-v2",
+      "PT10001/FLUX.2-Klein-Multi-LoRA-v2",
+      "uzikdo5130/FLUX.2-Klein-Multi-LoRA-v2",
+      "muhwira27/miausaku-receipt-ocr",
+      "GTO83/FLUX.2-Klein-Multi-LoRA-v2",
+      "bep40/FLUX.2-Klein-Multi-LoRA-v2",
+      "Jestoo/THOOTH",
+      "weecansaas/assistant-tarif-ngp",
+      "lilyjeongwon/qwen-vl"
+    ],
+    "createdAt": "2025-10-19T13:13:24.000Z",
+    "safetensors": {
+      "parameters": {
+        "BF16": 2127532032
+      },
+      "total": 2127532032
+    },
+    "usedStorage": 4255140312
+  }
+}

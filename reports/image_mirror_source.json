@@ -1,0 +1,126 @@
+{
+  "_id": "65b8b9b37817e067a5fef45a",
+  "id": "lmms-lab-encoder/HallusionBench",
+  "author": "lmms-lab-encoder",
+  "sha": "cd417161857aefb23d878d42cf1bb53aa9dd646f",
+  "lastModified": "2024-03-08T03:19:26.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "size_categories:1K<n<10K",
+    "format:parquet",
+    "modality:image",
+    "modality:text",
+    "library:datasets",
+    "library:pandas",
+    "library:polars",
+    "library:mlcroissant",
+    "arxiv:2310.14566",
+    "arxiv:2306.14565",
+    "arxiv:2311.10774",
+    "region:us"
+  ],
+  "description": "\n\n\n\n\n\t\n\t\t\n\t\n\t\n\t\tLarge-scale Multi-modality Models Evaluation Suite\n\t\n\n\nAccelerating the development of large-scale multi-modality models (LMMs) with lmms-eval\n\n\ud83c\udfe0 Homepage | \ud83d\udcda Documentation | \ud83e\udd17 Huggingface Datasets\n\n\t\n\t\t\n\t\n\t\n\t\tThis Dataset\n\t\n\nThis is a formatted version of HallusionBench. It is used in our lmms-eval pipeline to allow for one-click evaluations of large multi-modality models.\n@misc{guan2023hallusionbench,\n      title={HallusionBench: An Advanced Diagnostic Suite for Entangled\u2026 See the full description on the dataset page: https://huggingface.co/datasets/lmms-lab-encoder/HallusionBench.",
+  "downloads": 5030,
+  "likes": 10,
+  "cardData": {
+    "dataset_info": {
+      "features": [
+        {
+          "name": "category",
+          "dtype": "string"
+        },
+        {
+          "name": "subcategory",
+          "dtype": "string"
+        },
+        {
+          "name": "visual_input",
+          "dtype": "string"
+        },
+        {
+          "name": "set_id",
+          "dtype": "string"
+        },
+        {
+          "name": "figure_id",
+          "dtype": "string"
+        },
+        {
+          "name": "sample_note",
+          "dtype": "string"
+        },
+        {
+          "name": "question_id",
+          "dtype": "string"
+        },
+        {
+          "name": "question",
+          "dtype": "string"
+        },
+        {
+          "name": "gt_answer_details",
+          "dtype": "string"
+        },
+        {
+          "name": "gt_answer",
+          "dtype": "string"
+        },
+        {
+          "name": "filename",
+          "dtype": "string"
+        },
+        {
+          "name": "image",
+          "dtype": "image"
+        }
+      ],
+      "splits": [
+        {
+          "name": "image",
+          "num_bytes": 431997264,
+          "num_examples": 951
+        },
+        {
+          "name": "non_image",
+          "num_bytes": 41136,
+          "num_examples": 178
+        }
+      ],
+      "download_size": 146553615,
+      "dataset_size": 432038400
+    },
+    "configs": [
+      {
+        "config_name": "default",
+        "data_files": [
+          {
+            "split": "image",
+            "path": "data/image-*"
+          },
+          {
+            "split": "non_image",
+            "path": "data/non_image-*"
+          }
+        ]
+      }
+    ]
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "data/image-00000-of-00001.parquet"
+    },
+    {
+      "rfilename": "data/non_image-00000-of-00001.parquet"
+    }
+  ],
+  "createdAt": "2024-01-30T08:56:19.000Z",
+  "usedStorage": 146553615
+}

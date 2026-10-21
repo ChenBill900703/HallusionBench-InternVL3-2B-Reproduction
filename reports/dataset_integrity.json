@@ -1,0 +1,56 @@
+{
+  "question_count": 1129,
+  "unique_images": 346,
+  "question_control_groups": 455,
+  "image_condition_question_counts": {
+    "no_visual": 178,
+    "original": 447,
+    "edited": 504
+  },
+  "unique_image_conditions": {
+    "original": 165,
+    "edited": 181
+  },
+  "category_subcategory_conditions": {
+    "VS/chart/no_visual": 76,
+    "VS/chart/original": 68,
+    "VS/chart/edited": 62,
+    "VS/table/no_visual": 43,
+    "VS/table/original": 43,
+    "VS/table/edited": 69,
+    "VS/map/no_visual": 32,
+    "VS/map/original": 32,
+    "VS/map/edited": 32,
+    "VS/ocr/no_visual": 27,
+    "VS/ocr/original": 27,
+    "VS/ocr/edited": 27,
+    "VD/illusion/original": 72,
+    "VD/illusion/edited": 72,
+    "VD/math/original": 54,
+    "VD/math/edited": 54,
+    "VD/ocr/original": 43,
+    "VD/ocr/edited": 46,
+    "VD/figure/original": 39,
+    "VD/figure/edited": 41,
+    "VD/video/original": 69,
+    "VD/video/edited": 101
+  },
+  "missing_images": [],
+  "duplicate_sample_ids": [],
+  "image_mirror": {
+    "used": true,
+    "metadata_rows_compared": 1129,
+    "metadata_mismatches": 0,
+    "unique_images_restored": 346,
+    "source": "lmms-lab-encoder/HallusionBench",
+    "revision": "cd417161857aefb23d878d42cf1bb53aa9dd646f",
+    "original_drive_http_status": 404,
+    "limitation": "Metadata matches official JSON. Original Drive image bytes unavailable; byte identity with original archive cannot be independently proven."
+  },
+  "dataset_json_sha256": "ca6e0fb677dd56e5fb0e2700d06c58d01f8a6ae66e0f1773b2ac48c0a095d051",
+  "upstream_commit": "744007c232c292942c7f80eb61edb2465482da31",
+  "dataset_last_change_commit": "c226ce45c95eec2935b09789099409c682a6c05d",
+  "id_policy": "sample_id is a derived composite key; question_pair_id follows official utils.py, not a new official ID.",
+  "video_policy": "Official filenames reference precomposed consecutive-image PNGs. Preserve whole PNG and frame layout/order; no frame resampling or reordering.",
+  "label_note": "Official VD/ocr corresponds to Poster in paper. Original metadata retained."
+}
