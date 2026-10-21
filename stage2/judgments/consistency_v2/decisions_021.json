@@ -1,0 +1,1 @@
+{"reviewed_all_full_text":true,"notes":{"0":"explanation_error:1.414269 小於 1.42，不在 1.42-1.43。","2":"explanation_error:1.42421 位於 1.42-1.43，卻用它支持 No；主文字承諾否定仍明確。","8":"scope_resolution:No 明確否定 r³，隨後明確肯定題目 r²；不同命題不當作同命題肯否矛盾，依固定規範第 5 條保留 yes/1。","19":"explanation_error:6.67428 小於 6.68，卻稱落在 6.68-6.70。","20":"explanation_error:將 10^-111 數值又稱略高於 10^-11 區間下界，量級不一致。"}}

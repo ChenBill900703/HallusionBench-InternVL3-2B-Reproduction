@@ -1,0 +1,2 @@
+{"sample_id": "VD/illusion/3/1/1", "before": "same", "after": "different", "reason": "基準正文說兩線同長；修改正文說頂線較短。比較完整尺寸事實，不能只因兩者都 No 判 same。"}
+{"sample_id": "VD/ocr/10/1/0", "before": "uncertain", "after": "different", "reason": "基準明讀 TEXAS，修改回答明讀 Maryland；實際文字事實不同，即使均推成 Texas 也不能判 same 或因錯誤映射保留 uncertain。"}

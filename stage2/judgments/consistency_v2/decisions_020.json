@@ -1,0 +1,1 @@
+{"reviewed_all_full_text":true,"notes":{"10":"explanation_error:把包含在 2.71-2.72 內的更窄區間當作否定原區間的理由，區間包含推論不成立。","12":"explanation_error:僅大於區間下界 2.70，不能單獨推出不在 2.70-2.71；其數值確實高於 2.71。","15":"explanation_error:2.71828 小於 2.72 卻稱略大於 2.72；也與參考區間衝突。","18":"explanation_error:1.414269 大於 1.41，卻稱在 1.40-1.41。","21":"explanation_error:所列數值位於題目區間，卻把常數不『恰好等於整個區間』當否定理由。"}}

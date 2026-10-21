@@ -1,0 +1,1 @@
+{"method":"Cross-batch application of the frozen rubric after reading all 47 batches; not an independent pass.","items":{"VD/ocr/10/1/0":["y",0,"完整回答清楚承諾 Texas，卻把讀出的 Maryland 映射成 Texas，是明確錯誤映射；與 Red Deer→Red Bull、Utopia→Zootopia 同規則判 0，不把錯誤推論混成無立場。"]},"pairs":{"VD/ocr/10/1/0":["d","基準明讀 TEXAS，修改回答明讀 Maryland；實際文字事實不同，即使均推成 Texas 也不能判 same 或因錯誤映射保留 uncertain。"]}}

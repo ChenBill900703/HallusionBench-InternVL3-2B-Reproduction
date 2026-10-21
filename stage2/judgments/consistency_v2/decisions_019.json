@@ -1,0 +1,1 @@
+{"reviewed_all_full_text":true,"overrides":{"23":["n",1,"模型明確說黑潮不經俄羅斯，符合文字參考具體敘述；GT=1 及 Yes 前綴衝突另列。"]},"notes":{"2":"reference_dispute:文字先 No 卻具體說 Miami 最南；採具體位置敘述，二元 GT=1 保留。","8":"explanation_error:稱兩個不同縣『both situated to the east of each other』，互相都在對方東側不相容。","23":"reference_dispute:二元 GT=1、文字 Yes，但正文 does not flow through Russia；依具體敘述判 1。"}}

@@ -1,0 +1,1 @@
+{"reviewed_all_full_text":true,"notes":{"8":"scope_resolution:開頭 No 沒有明確改指別的公式或命題，與正文相加 180 直接相反；維持 ambiguous/2。","11":"explanation_error:補角之和為 180，不能以『大於 180 才是補角』推論。","18":"explanation_error:明說 x 不小於 5，卻計算 x=√7≈2.65；且 x 數值直接衝突參考 5，主判 0。","19":"explanation_error:三角不等式 3/4/x 僅給 1<x<7，不能推出 x<5；原式亦缺項。"}}

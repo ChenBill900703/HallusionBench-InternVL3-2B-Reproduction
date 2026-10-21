@@ -1,0 +1,1 @@
+{"reviewed_all_full_text":true,"overrides":{"21":["a",2,"No 回答的是是否下降；正文只說整體上升，未明確確認 2010 為最低，不代模型補出 Yes。"]},"notes":{"20":"reference_dispute:文字參考僅重複問題，未給肯定命題；二元 GT=1 保留。","22":"reference_dispute:文字參考重複另一問句，沒有明確答案；二元 GT=0 保留。"}}
