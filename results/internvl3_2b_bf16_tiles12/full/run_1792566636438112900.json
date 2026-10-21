@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-21T07:10:31.156620+00:00",
+  "model_load_seconds": 5.28004250000231,
+  "config": {
+    "run_name": "internvl3_2b_bf16_tiles12",
+    "backend": "internvl",
+    "model_name": "OpenGVLab/InternVL3-2B",
+    "revision": "899155015275a9b7338c7f4677e19c784e0e5a21",
+    "local_model_path": "models/internvl3_2b",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "batch_size": 1,
+    "seed": 42,
+    "max_dynamic_tiles": 12,
+    "use_thumbnail": true,
+    "tile_size": 448,
+    "attention": "official_eager_no_flash_attn",
+    "prompt_template": "Answer the following question with Yes or No, then briefly explain your answer. If the available information is insufficient, say that you cannot determine the answer.\nQuestion: {question}",
+    "generation": {
+      "max_new_tokens": 128,
+      "do_sample": false,
+      "num_beams": 1
+    }
+  },
+  "config_sha256": "4db31ffc81d8b449437279341bb2a8382af26c08affe07781d9a7026e721998d",
+  "inference_code_sha256": "1165311c6eb9470da0b47f5895c141611cc0d15033b692f0f4e993c3c811c1e3",
+  "manifest_sha256": "e134fdc4e8de12039f3c1e2d85c95e4f5fa2c2f80180622dbcfd7ec2687f0ede",
+  "pid": 8356,
+  "runtime_memory_policy": {
+    "per_process_memory_fraction": 0.9,
+    "empty_cache_after_each_sample": true,
+    "purpose": "Limit unused cache growth on the 8GB Windows GPU; generation settings unchanged."
+  },
+  "torch": "2.7.1+cu128",
+  "cuda_runtime": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti",
+  "gpu_total_bytes": 8589410304,
+  "load_peak_allocated_bytes": 4178806272,
+  "cpu": "Intel64 Family 6 Model 167 Stepping 1, GenuineIntel",
+  "ram": {
+    "total": 34146988032,
+    "available": 16409899008,
+    "percent": 51.9,
+    "used": 17737089024,
+    "free": 16409899008
+  },
+  "selected_sample_count": 1129,
+  "pending_count_at_start": 925
+}
