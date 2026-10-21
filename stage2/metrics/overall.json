@@ -1,0 +1,222 @@
+{
+  "table2": {
+    "qAcc": {
+      "numerator": 102,
+      "denominator": 455,
+      "fraction": 0.22417582417582418,
+      "percent": 22.417582417582416,
+      "formula": "sum_g product_{i in g} c_i / N_control_groups"
+    },
+    "fAcc": {
+      "numerator": 100,
+      "denominator": 346,
+      "fraction": 0.28901734104046245,
+      "percent": 28.90173410404624,
+      "formula": "sum_f product_{i in f} c_i / N_real_figures; exclude VS figure_id=0"
+    },
+    "Easy": {
+      "numerator": 251,
+      "denominator": 455,
+      "fraction": 0.5516483516483517,
+      "percent": 55.16483516483517,
+      "formula": "filter visual_input!=2, group by question_pair_id, count groups all correct"
+    },
+    "Hard": {
+      "numerator": 193,
+      "denominator": 430,
+      "fraction": 0.44883720930232557,
+      "percent": 44.883720930232556,
+      "formula": "filter visual_input==2, group by question_pair_id, count groups all correct"
+    },
+    "All": {
+      "numerator": 617,
+      "denominator": 1129,
+      "fraction": 0.5465013286093888,
+      "percent": 54.65013286093888,
+      "formula": "sum_i c_i / N_items"
+    }
+  },
+  "consistency": {
+    "correct": {
+      "numerator": 100,
+      "denominator": 346,
+      "fraction": 0.28901734104046245,
+      "percent": 28.90173410404624,
+      "formula": "figure groups with all / some / zero items correct"
+    },
+    "inconsistent": {
+      "numerator": 177,
+      "denominator": 346,
+      "fraction": 0.5115606936416185,
+      "percent": 51.15606936416185,
+      "formula": "figure groups with all / some / zero items correct"
+    },
+    "wrong": {
+      "numerator": 69,
+      "denominator": 346,
+      "fraction": 0.1994219653179191,
+      "percent": 19.942196531791907,
+      "formula": "figure groups with all / some / zero items correct"
+    }
+  },
+  "diagnosis_items": {
+    "LH": {
+      "numerator": 112,
+      "denominator": 512,
+      "fraction": 0.21875,
+      "percent": 21.875,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "VI": {
+      "numerator": 279,
+      "denominator": 512,
+      "fraction": 0.544921875,
+      "percent": 54.4921875,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "Mix": {
+      "numerator": 121,
+      "denominator": 512,
+      "fraction": 0.236328125,
+      "percent": 23.6328125,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    }
+  },
+  "diagnosis_failed_groups": {
+    "LH": {
+      "numerator": 48,
+      "denominator": 353,
+      "fraction": 0.1359773371104816,
+      "percent": 13.597733711048159,
+      "formula": "union flags within each failed question control group / failed groups"
+    },
+    "VI": {
+      "numerator": 200,
+      "denominator": 353,
+      "fraction": 0.56657223796034,
+      "percent": 56.657223796033996,
+      "formula": "union flags within each failed question control group / failed groups"
+    },
+    "Mix": {
+      "numerator": 105,
+      "denominator": 353,
+      "fraction": 0.29745042492917845,
+      "percent": 29.745042492917847,
+      "formula": "union flags within each failed question control group / failed groups"
+    }
+  },
+  "bias": {
+    "official_pct_diff": {
+      "predicted_yes_proxy_numerator": 652,
+      "gt_yes_numerator": 484,
+      "denominator": 1129,
+      "difference_numerator": 168,
+      "fraction": 0.1488042515500443,
+      "formula": "mean(int(correct==gt_answer)) - mean(gt_answer)"
+    },
+    "official_fp_ratio": {
+      "numerator": 340,
+      "denominator": 512,
+      "fraction": 0.6640625,
+      "percent": 66.40625,
+      "formula": "count(final incorrect AND gt_answer=0) / count(final incorrect)"
+    },
+    "inferred_yes_proxy_note": "Not observed stance; official proxy only.",
+    "direct_semantic": {
+      "binary_items": 1111,
+      "determinate_items": 940,
+      "excluded_open_ended": 18,
+      "binary_stance_counts": {
+        "uncertain": 104,
+        "yes": 507,
+        "no": 433,
+        "ambiguous": 67
+      },
+      "yes_rate": {
+        "numerator": 507,
+        "denominator": 940,
+        "fraction": 0.5393617021276595,
+        "percent": 53.93617021276596,
+        "formula": "semantic yes / determinate binary answers"
+      },
+      "gt_yes_rate_on_same_subset": {
+        "numerator": 399,
+        "denominator": 940,
+        "fraction": 0.42446808510638295,
+        "percent": 42.4468085106383,
+        "formula": "gt yes / same determinate subset"
+      },
+      "pct_diff": {
+        "numerator": 108,
+        "denominator": 940,
+        "fraction": 0.1148936170212766
+      },
+      "false_positive_share_among_polarity_errors": {
+        "numerator": 228,
+        "denominator": 348,
+        "fraction": 0.6551724137931034,
+        "percent": 65.51724137931035,
+        "formula": "semantic yes AND gt=0 / all wrong-polarity determinate answers"
+      },
+      "false_positive_rate": {
+        "numerator": 228,
+        "denominator": 541,
+        "fraction": 0.4214417744916821,
+        "percent": 42.144177449168204,
+        "formula": "semantic yes AND gt=0 / gt-negative determinate answers"
+      },
+      "false_negative_count": 120,
+      "note": "Uses binary gt only; reference conflicts remain. Excludes abstention and nonbinary questions; not same denominator as official proxy."
+    }
+  },
+  "official_raw": {
+    "all": {
+      "LH": 65,
+      "VI": 187,
+      "Mix": 260,
+      "note": "all accuracy per question",
+      "total": 1129,
+      "correct": 617,
+      "wrong": 512
+    },
+    "pair": {
+      "note": "all accuracy per question pair",
+      "total": 455,
+      "total_q": 1129,
+      "correct": 102,
+      "wrong": 353,
+      "LH": 48,
+      "VI": 200,
+      "Mix": 105,
+      "LH_cg": 112,
+      "VI_cg": 279,
+      "Mix_cg": 121
+    },
+    "figure": {
+      "note": "all accuracy per image (consistency test)",
+      "total": 346,
+      "correct": 100,
+      "wrong": 69,
+      "inconsistent": 177,
+      "score": 0.5445568400770712
+    },
+    "easy": {
+      "note": "all accuracy per question pair",
+      "total": 455,
+      "total_q": 625,
+      "correct": 251,
+      "wrong": 204
+    },
+    "hard": {
+      "note": "all accuracy per question pair",
+      "total": 430,
+      "total_q": 504,
+      "correct": 193,
+      "wrong": 237
+    },
+    "bias": {
+      "diff": 0.1488042515500443,
+      "fp": 0.6640625
+    }
+  }
+}

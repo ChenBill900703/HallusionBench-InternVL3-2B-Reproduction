@@ -1,0 +1,6 @@
+﻿metric,numerator,denominator,percent,formula,judge,result_type
+qAcc,102,455,22.417582417582416,sum_g product_{i in g} c_i / N_control_groups,GPT-6.1 in-session semantic + adjudication,Our Measured Result
+fAcc,100,346,28.90173410404624,sum_f product_{i in f} c_i / N_real_figures; exclude VS figure_id=0,GPT-6.1 in-session semantic + adjudication,Our Measured Result
+Easy,251,455,55.16483516483517,"filter visual_input!=2, group by question_pair_id, count groups all correct",GPT-6.1 in-session semantic + adjudication,Our Measured Result
+Hard,193,430,44.883720930232556,"filter visual_input==2, group by question_pair_id, count groups all correct",GPT-6.1 in-session semantic + adjudication,Our Measured Result
+All,617,1129,54.65013286093888,sum_i c_i / N_items,GPT-6.1 in-session semantic + adjudication,Our Measured Result

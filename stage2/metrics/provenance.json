@@ -1,0 +1,9 @@
+{
+  "judge": "gpt-6.1-sol",
+  "official_utils_sha256": "4f058a50d64253029823d6ca4549b2ea8f348346faa3483e6ac95b1879b2e30d",
+  "judgments_sha256": "18f8a828c9436dcf95258c5a34aca60a6deb215b6a5844572a60c739d62b8efa",
+  "pair_relations_sha256": "c002a0ce1ce2a2539b4d428072cb800abfc8d35dba9a37748f784e52f0f296b2",
+  "paid_api_calls": 0,
+  "primary_same_uncertain_projection": 0,
+  "version": "hb-stage2-v2"
+}

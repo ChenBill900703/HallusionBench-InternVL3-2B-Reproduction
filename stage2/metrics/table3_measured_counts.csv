@@ -1,0 +1,9 @@
+﻿metric,numerator,denominator,value,units
+PctDiff,168,1129,0.1488042515500443,fraction
+FP Ratio,340,512,0.6640625,fraction
+consistency/correct,100,346,28.90173410404624,percent
+consistency/inconsistent,177,346,51.15606936416185,percent
+consistency/wrong,69,346,19.942196531791907,percent
+diagnosis_items/LH,112,512,21.875,percent
+diagnosis_items/VI,279,512,54.4921875,percent
+diagnosis_items/Mix,121,512,23.6328125,percent

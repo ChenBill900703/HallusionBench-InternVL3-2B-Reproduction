@@ -1,0 +1,9 @@
+﻿model,qAcc,fAcc,Easy,Hard,All,evaluation,result_type
+GPT-4V (Oct 2023),31.42,44.22,79.56,38.37,67.58,Human,Published Result
+GPT-4V (Oct 2023),28.79,39.88,75.6,37.67,65.28,GPT4-Assisted,Published Result
+LLaVA-1.5,10.55,24.86,49.67,29.77,46.94,GPT4-Assisted,Published Result
+Qwen-VL,5.93,6.65,31.43,24.88,39.15,GPT4-Assisted,Published Result
+BLIP2,5.05,12.43,33.85,40.7,40.48,GPT4-Assisted,Published Result
+Claude 3,21.76,28.61,55.16,41.4,56.86,GPT4-Assisted,Published Result
+BLIP2-T5,15.16,20.52,45.49,43.49,48.09,GPT4-Assisted,Published Result
+InternVL3-2B,22.417582417582416,28.90173410404624,55.16483516483517,44.883720930232556,54.65013286093888,GPT-6.1 semantic + adjudication,Our Measured Result

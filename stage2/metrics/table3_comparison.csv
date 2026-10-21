@@ -1,0 +1,9 @@
+﻿model,PctDiff,FP,Correct,Inconsistent,Wrong,LH,VI,Mixed,evaluation,result_type
+GPT-4V (Oct 2023),0.066,0.6,44.22,32.66,23.12,21.86,46.17,31.97,Human,Published Result
+GPT-4V (Oct 2023),0.058,0.58,39.88,38.15,21.97,22.19,45.66,32.14,GPT4-Assisted,Published Result
+LLaVA-1.5,0.26,0.75,24.86,45.38,29.77,26.71,51.09,22.2,GPT4-Assisted,Published Result
+Qwen-VL,0.12,0.6,6.65,50.29,43.06,0.87,88.06,11.06,GPT4-Assisted,Published Result
+BLIP2,0.18,0.65,12.43,63.01,24.57,39.14,43.45,17.41,GPT4-Assisted,Published Result
+Claude 3,0.063,0.57,28.61,49.42,21.97,19.1,59.14,21.77,GPT4-Assisted,Published Result
+BLIP2-T5,0.08,0.58,20.52,59.54,19.94,41.64,40.44,17.92,GPT4-Assisted,Published Result
+InternVL3-2B,0.1488042515500443,0.6640625,28.90173410404624,51.15606936416185,19.942196531791907,21.875,54.4921875,23.6328125,GPT-6.1 semantic + adjudication,Our Measured Result

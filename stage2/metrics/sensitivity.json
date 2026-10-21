@@ -1,0 +1,149 @@
+{
+  "uncertain_pair_count": 155,
+  "pair_relations": {
+    "uncertain": 155,
+    "different": 232,
+    "same": 287
+  },
+  "uncertain_same_projected_0": {
+    "LH": {
+      "numerator": 112,
+      "denominator": 512,
+      "fraction": 0.21875,
+      "percent": 21.875,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "VI": {
+      "numerator": 279,
+      "denominator": 512,
+      "fraction": 0.544921875,
+      "percent": 54.4921875,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "Mix": {
+      "numerator": 121,
+      "denominator": 512,
+      "fraction": 0.236328125,
+      "percent": 23.6328125,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    }
+  },
+  "uncertain_same_projected_1": {
+    "LH": {
+      "numerator": 113,
+      "denominator": 512,
+      "fraction": 0.220703125,
+      "percent": 22.0703125,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "VI": {
+      "numerator": 278,
+      "denominator": 512,
+      "fraction": 0.54296875,
+      "percent": 54.296875,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    },
+    "Mix": {
+      "numerator": 121,
+      "denominator": 512,
+      "fraction": 0.236328125,
+      "percent": 23.6328125,
+      "formula": "operational flags per VQ item / all flagged VQ items; evaluation.py Table3"
+    }
+  },
+  "figure3_VD_same_wrong_variant_counts": {
+    "none": 617,
+    "VI": 279,
+    "LH": 191,
+    "Mixed": 42
+  },
+  "reference_dispute_accuracy_bounds": {
+    "all_disputes_wrong": {
+      "All": {
+        "numerator": 604,
+        "denominator": 1129,
+        "fraction": 0.5349867139061116,
+        "percent": 53.49867139061116,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "qAcc": {
+        "numerator": 98,
+        "denominator": 455,
+        "fraction": 0.2153846153846154,
+        "percent": 21.53846153846154,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "fAcc": {
+        "numerator": 97,
+        "denominator": 346,
+        "fraction": 0.28034682080924855,
+        "percent": 28.034682080924856,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "Easy": {
+        "numerator": 244,
+        "denominator": 455,
+        "fraction": 0.5362637362637362,
+        "percent": 53.62637362637363,
+        "formula": "same grouped easy definition"
+      },
+      "Hard": {
+        "numerator": 188,
+        "denominator": 430,
+        "fraction": 0.4372093023255814,
+        "percent": 43.72093023255814,
+        "formula": "same grouped hard definition"
+      }
+    },
+    "all_disputes_correct": {
+      "All": {
+        "numerator": 636,
+        "denominator": 1129,
+        "fraction": 0.5633303808680248,
+        "percent": 56.33303808680248,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "qAcc": {
+        "numerator": 112,
+        "denominator": 455,
+        "fraction": 0.24615384615384617,
+        "percent": 24.615384615384617,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "fAcc": {
+        "numerator": 108,
+        "denominator": 346,
+        "fraction": 0.31213872832369943,
+        "percent": 31.213872832369944,
+        "formula": "all disputed final correctness set to 0 or 1"
+      },
+      "Easy": {
+        "numerator": 257,
+        "denominator": 455,
+        "fraction": 0.5648351648351648,
+        "percent": 56.48351648351648,
+        "formula": "same grouped easy definition"
+      },
+      "Hard": {
+        "numerator": 203,
+        "denominator": 430,
+        "fraction": 0.4720930232558139,
+        "percent": 47.2093023255814,
+        "formula": "same grouped hard definition"
+      }
+    }
+  },
+  "paired_condition_comparison": {
+    "groups": 422,
+    "mean_original": 0.5947867298578199,
+    "mean_edited": 0.48104265402843605,
+    "delta_edited_minus_original": -0.11374407582938388,
+    "cluster_bootstrap_95_percentile": [
+      -0.18130924170616114,
+      -0.042624407582938555
+    ],
+    "bootstrap_seed": 20261021,
+    "replicates": 2000,
+    "caveat": "Descriptive resampling over benchmark groups; not an IID-question or causal model-effect confidence claim."
+  }
+}
